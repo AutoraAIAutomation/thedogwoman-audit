@@ -176,16 +176,27 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
 footer b{color:#fff}
 @media print{nav.bar{position:static}.btn{display:none}}
 
+
+@media (max-width:560px){
+  nav.bar .wrap{height:52px;gap:10px}
+  nav.bar .brand .pre{display:none}
+  .btn .long{display:none}.btn .short{display:inline}
+  .btn{padding:9px 12px;font-size:13px}
+}
+.btn .short{display:none}
+
+.cover h1{overflow-wrap:anywhere}
+@media (max-width:560px){.cover h1{font-size:clamp(30px,10.5vw,46px);margin-top:48px}.cover .wrap{padding-top:28px}}
 </style>
 </head>
 <body>
 <nav class="bar"><div class="wrap">
-  <a class="brand" href="#top">Monetisation audit <span>· @the_dog_woman</span></a>
+  <a class="brand" href="#top"><span class="pre">Monetisation audit </span><span>· @the_dog_woman</span></a>
   <ul>
     <li><a href="#overview">Overview</a></li><li><a href="#opportunity">Opportunity</a></li><li><a href="#numbers">Numbers</a></li>
     <li><a href="#ladder">Product ladder</a></li><li><a href="#build">We build it</a></li><li><a href="#launch">Launch</a></li><li><a href="#test">Test</a></li>
   </ul>
-  <a class="btn" href="thedogwoman-monetisation-audit.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v3h16v-3"/></svg>Download PDF</a>
+  <a class="btn" href="thedogwoman-monetisation-audit.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v3h16v-3"/></svg><span class="long">Download PDF</span><span class="short">PDF</span></a>
 </div></nav>
 
 <header class="cover" id="top">
